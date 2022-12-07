@@ -9,8 +9,8 @@
 // @require      https://raw.githubusercontent.com/flyover/imgui-js/master/dist/imgui.umd.js
 // @require      https://raw.githubusercontent.com/flyover/imgui-js/master/dist/imgui_impl.umd.js
     
-// @downloadURL  https://raw.githubusercontent.com/sheezzmee/shizoval/main/release/shizoval.user.js
-// @updateURL    https://raw.githubusercontent.com/sheezzmee/shizoval/main/release/shizoval.meta.js
+// @downloadURL  https://raw.githubusercontent.com/ZolangDev/Tanki.js/main/release/shizoval.user.js
+// @updateURL    https://raw.githubusercontent.com/ZolangDev/Tanki.js/main/release/shizoval.meta.js
     
 // @run-at       document-start
 // @grant        GM_xmlhttpRequest
