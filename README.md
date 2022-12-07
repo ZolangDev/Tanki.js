@@ -2,31 +2,31 @@
 
 Discord: **солевой#4769**
 
-## Использование
+## Usage
 
-На выбор есть два способа игры с читом:
+There are two ways to use the cheat:
 
-**1.** [Сайт со встроенным читом](https://shizoval-site.vercel.app/) (Преимущество - не нужно ничего устанавливать)
+**1.** [Site with built-in cheat](https://shizoval-site.vercel.app/) (Advantage - no need to install anything)
 
-**2.** Установка скрипта (Преимущество - более стабильная работа)
+**2.** Installing the script (Benefit - more stable operation)
 
-## Установка
+## Installation
 
-**1.** Установите [Tampermonkey](https://www.tampermonkey.net/)
+**1.** Install [Tampermonkey](https://www.tampermonkey.net/)
 
-**2.** Установите [скрипт](https://github.com/sheezzmee/shizoval/raw/main/release/shizoval.user.js)
+**2.** Install [script](https://github.com/sheezzmee/shizoval/raw/main/release/shizoval.user.js)
 
-## Клавиши
+## Keys
 
-`INSERT`, `NumPad 0`, `/` - Открыть меню
+`INSERT`, `NumPad 0`, `/` - Open menu
 
-## Кастомизация чита
+## Customization reads
 
-  В версии **0.64.3** добавлена возможность кастомизации чита, а именно был открыт полный доступ к апи чита и всем внутреннем функциям.
+  In version **0.64.3**, the ability to customize the cheat has been added, namely, full access to the cheat API and all internal functions has been opened.
   
-  **Глобальные переменные созданные для вас**
+  **Global variables created for you**
   
-      Мне лень объяснять, что да как, поэтому за меня это сделает твоя консоль браузера
+      I'm too lazy to explain what and how, so your browser console will do it for you
       utils
       gameObjects
       storeOpener
@@ -49,14 +49,14 @@ Discord: **солевой#4769**
       
   ![](https://github.com/sheezzmee/shizoval/blob/main/img/exampleScript.jpg?raw=true)
  
-  Пару примеров (эти скрипты вписывать в консоль или в конец скрипта): 
+  A couple of examples (write these scripts into the console or at the end of the script): 
   
 ```js
 /*  SHIZOVAL
-*  Автор кода: sheezzmee
-*  Название: Legit FPS hack
-*  Описание: Удаление мин позиция, которых совпадает с другими
-*  Активация: Digit0
+*  Code creator: sheezzmee
+*  Name: Legit FPS hack
+*  Description: Remove mine positions that are the same as others
+*  Activation: Digit0
 */
    
 const checkMine = mine => {
@@ -90,10 +90,10 @@ document.addEventListener('keyup', (e) => {
 
 ```js
 /*  SHIZOVAL
-*  Автор кода: sheezzmee
-*  Название: Box Teleport
-*  Описание: Телепортирует танк на бонусные ящики
-*  Активация: B (удержание)
+*  Code creator: sheezzmee
+*  Name: Box Teleport
+*  Description: Teleports the tank to bonus crates
+*  Activation: B (hold)
 */
 
 requestAnimationFrame(function boxTeleport() {
@@ -125,69 +125,69 @@ requestAnimationFrame(function boxTeleport() {
 })
 ```
 
-Если вы хотите, чтобы я выставил ваш скрипт сюда (авторство будет указано), то присылайте его мне в дс (там выше)
+If you want me to put your script here (authorship will be indicated), then send it to me in ds (there above) 
 
-## Клонирование проекта
+## Cloning a project
 
 ```bash
-# Клонирование репозитория
+# Cloning a repository
 git clone https://github.com/sheezzmee/shizoval.git
-# Перейти в папку с репозиторием
+# Go to repository folder
 cd shizoval
-# Установить зависимости
+# Install dependencies
 npm i
-# Компиляция проекта
+# Project Compilation
 npx gulp
 ```
 
-## Список изменений
+## List of changes
 
 * 0.64.3:
 
-      - Вырезана функция: BoxTeleport, FlagTeleport, DeSync, Box WallHack, Anti-Crash, Gravity, No-Knockback
+      - Features: BoxTeleport, FlagTeleport, DeSync, Box WallHack, Anti-Crash, Gravity, No-Knockback
       
-      - Улучшена функция AimBot
+      - Improved AimBot function
       
-      - Добавлена функция Packet Control (только для кликера)
-          * позволяет контролировать состояние сервера (если большой пинг, то скорость кликера уменьшается)
-          * активация автоматическая
+      - Added Packet Control function (clicker only)
+          * allows you to control the state of the server (if there is a large ping, then the speed of the clicker decreases)
+          * automatic activation
           
-      - Добавлена функция PPS (Packets Per Second)
-          * отображает кол-во пакетов отправляемых на сервер (включая пакеты отправляемые самой игрой)
-          * активация автоматическая
+      - Added PPS (Packets Per Second) function
+          * displays the number of packets sent to the server (including packets sent by the game itself)
+          * automatic activation
       
-      - Оптимизирован блок Sync 
+      - Optimized Sync block
       
-      - Улучшен Rapid Update
-          * пакеты не отправляются, если состояние танка не изменяется
-          * пакеты не отправляются, если танк мертв или не заспавнен (входит в битву)
+      - Improved Rapid Update
+          * packets are not sent if the tank state does not change
+          * packets are not sent if the tank is dead or not spawned (included in the battle)
 
-      - Отключена функция sendChassisControl (отправка пакетов передвижения)
+      - Disabled sendChassisControl function (sending movement packets)
 
-      - Пофикшен фпс баг
+      - Fixed fps bug
 
-      - Добавлена функция ConsoleLog
-          * логирует сообщения, убийства, выходы, самоуничтожения в консоль
+      - Added ConsoleLog function
+          * logs messages, kills, exits, self-destructs to the console
     ![](https://github.com/sheezzmee/shizoval/blob/main/img/consoleLog.jpg?raw=true)
        
-      - Улучшен кликер
-          * пакеты не отправляются, если танк мертв или не заспавнен (входит в битву)
-          * пакеты не отправляются, если сервер не отвечает
-          * изменен цикл на setInterval (более быстрая работа)
+      - Improved clicker
+          * packets are not sent if the tank is dead or not spawned (included in the battle)
+          * packets are not sent if the server is not responding
+          * changed loop to setInterval (faster operation)
    
-      - Добавлена возможность кастомизации чита
+      - Added the ability to customize the cheat
         
-      - Отключен самоурон от страйкера
+      - Striker self-destruction unlocked
 
-      - WallHack, Remove mines, Freeze tanks теперь активируется до того, как заспавнится локальный танк
+      - WallHack, Remove mines, Freeze tanks now activate before the local tank spawns
 
-      - Оптимизировано меню (меньше нагрузка)
+      - Optimized menu (less load)
 
-      - Оптимизирован страйкер хак
+      - Optimized striker hack
 
-      - Пофикшена функция GTA Camera
+      - Fixed GTA Camera feature
 
-      - Пофикшен баг когда камера застывает на одном месте
+      - Fixed a bug when the camera freezes in one place
 
-      - Улучшена функция отключения коллизии
-          * теперь танки полностью игнорируются (раньше коллизия башен танков не отключалась)
+      - Improved collision disable function
+          * now tanks are completely ignored (previously, the collision of tank turrets was not disabled)
