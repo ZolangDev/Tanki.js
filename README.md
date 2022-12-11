@@ -144,7 +144,7 @@ npx gulp
 
 * 0.64.3:
 
-      - Features: BoxTeleport, FlagTeleport, DeSync, Box WallHack, Anti-Crash, Gravity, No-Knockback
+      - Cut Features: BoxTeleport, FlagTeleport, DeSync, Box WallHack, Anti-Crash, Gravity, No-Knockback
       
       - Improved AimBot function
       
